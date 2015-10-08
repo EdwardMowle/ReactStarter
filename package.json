@@ -4,7 +4,7 @@
   "description": "A more or less stable starter kit for playing with React.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot --inline --content-base build/"
   },
   "author": "SevenInitiative",
   "license": "ISC",
