@@ -1,7 +1,7 @@
 import React from 'react';
-import Greeting from './components/greeting';
+import App from './components/app';
 
 React.render(
-    <Greeting name="World" />,
+    <App />,
     document.body
 );
