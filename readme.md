@@ -2,9 +2,9 @@
 
 Install all required dev tools and dependencies with the node package manager.
 
-'''
+```
 npm install
-'''
+```
 
 Build the project by running webpack.
 
