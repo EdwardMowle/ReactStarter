@@ -1,6 +1,6 @@
-ReactStarter is a simple starter kit for those wanting to play around with React without having to go through the (rather painful) process of installing it's dependencies and configuring the required build tools.
+ReactStarter is a simple starter kit for those wanting to play around with React without having to go through the process of installing it's dependencies and configuring the required build tools.
 
-[Webpack](https://webpack.github.io/) is the chosen tool for building and serving this app - it seems to be the most popular within the React community. It has been configured to use [Babel](https://babeljs.io/) to transpile your ES6 and JSX for the browser. It also uses [React Hot Loader](https://gaearon.github.io/react-hot-loader/) so that you can make changes to your React components and watch them update automatically in the browser without requiring a manual refresh or resetting application state.
+[Webpack](https://webpack.github.io/) is the chosen tool for building and serving this app - it seems to be the most popular within the React community. It has been configured to use [Babel](https://babeljs.io/) to transpile your ES6 and JSX for the browser. It also uses [React Hot Loader](https://gaearon.github.io/react-hot-loader/) so that you can make changes to your React components and watch them update automatically in the browser without losing your app state.
 
 # Getting setup
 
