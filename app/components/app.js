@@ -1,56 +1,58 @@
 import React from 'react';
-import Update from './update';
-import Greeting from './greeting';
+import Field from './field';
+import Preview from './preview';
 
-class App extends React.Component {
-
-    constructor( props ) {
-        super( props );
-        this.state = this.getState();
-    }
+var App = React.createClass({
 
     // State
 
-    getState() {
+    getInitialState: function() {
         return {
-            name: 'World',
-            message: 'This is a test message.',
-            counter: 0
+            recipient: '',
+            subject: '',
+            message: '',
+            changes: 0
         }
-    }
+    },
 
     // Actions
 
-    setName( newName ) {
-        this.incCounter();
-        this.setState({
-            name: newName
-        });
-    }
+    setRecipient: function( value ) {
+        this.incrementCounter();
+        this.setState({ recipient: value });
+    },
 
-    setMessage( newMessage ) {
-        this.incCounter();
-        this.setState({
-            message: newMessage
-        });
-    }
+    setSubject: function( value ) {
+        this.incrementCounter();
+        this.setState({ subject: value });
+    },
 
-    incCounter() {
-        this.setState({
-            counter: this.state.counter + 1
-        });
-    }
+    setMessage: function( value ) {
+        this.incrementCounter();
+        this.setState({ message: value });
+    },
 
-    render() {
+    incrementCounter: function() {
+        this.setState({ changes: this.state.changes + 1 })
+    },
+
+    // Render
+
+    render: function() {
         return (
-            <div>
-                <Update text={this.state.name} change={this.setName.bind(this)} />
-                <Update text={this.state.message} change={this.setMessage.bind(this)} />
-                <Greeting { ...this.state } />
+            <div className="App">
+              <div className="App-fields">
+                  <Field name="Recipient" value={this.state.recipient} change={this.setRecipient} />
+                  <Field name="Subject" value={this.state.subject} change={this.setSubject} />
+                  <Field name="Message" value={this.state.message} change={this.setMessage} />
+              </div>
+              <div className="App-preview">
+                  <Preview { ...this.state } />
+              </div>
             </div>
         )
     }
 
-};
+});
 
 export default App;
