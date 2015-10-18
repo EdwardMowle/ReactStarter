@@ -36,6 +36,6 @@ Serve the project using webpack-dev-server using the start script defined in pac
 npm start
 ```
 
-You should now be able to access your project on port [localhost:8080](http://localhost:8080).
+You should now be able to access your project on port [http://localhost:8080](http://localhost:8080).
 
-Start hacking! Hint: start by looking at app/components/app.js (you might want to delete the other components).
+Start hacking!
