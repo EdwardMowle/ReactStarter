@@ -7,31 +7,31 @@ ReactStarter is a simple starter kit for those wanting to play around with React
 Clone this repository into a directory on your machine.
 
 ```
-git clone https://github.com/SevenInitiative/ReactStarter.git
+$ git clone https://github.com/SevenInitiative/ReactStarter.git
 ```
 
 Navigate into the new directory.
 
 ```
-cd ReactStarter
+$ cd ReactStarter
 ```
 
 Install all required dev tools and dependencies with the node package manager.
 
 ```
-npm install
+$ npm install
 ```
 
-Build the project by running webpack.
+Build the project by running webpack (or the npm build script).
 
 ```
-webpack
+$ npm run build
 ```
 
 Serve the project using webpack-dev-server using the start script defined in package.json.
 
 ```
-npm start
+$ npm start
 ```
 
 You should now be able to access your project on port [http://localhost:8080](http://localhost:8080).

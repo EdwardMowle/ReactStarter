@@ -4,7 +4,8 @@
   "description": "A more or less stable starter kit for playing with React.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --content-base build/"
+    "start": "webpack-dev-server --hot --inline --content-base build/",
+    "build": "webpack"
   },
   "author": "SevenInitiative",
   "license": "ISC",
